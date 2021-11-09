@@ -13,7 +13,7 @@
         <h1 class="header__title">Randomizer</h1>
       </header>
       <section class="randomizer">
-        <form action="#" class="randomizer__form">
+        <form action="#" class="randomizer__form" id="form">
           <div class="randomizer__group-input">
             <input
               type="text"
@@ -35,8 +35,8 @@
           <span class="randomizer__result" id = "foutput">Genereted numbers:</span>
           <span class="randomizer__result" id = "output">Genereted number:</span>
           <div class="randomizer__group-btn">
-            <button class="randomizer__btn generate" id = "d">Generate</button>
-            <button class="randomizer__btn " id = 'reset'>Reset</button>
+            <button type="button" class="randomizer__btn generate" id = "d">Generate</button>
+            <button type="button" class="randomizer__btn " id = 'reset' onclick="res()">Reset</button>
           </div>
         </form>
       </section>

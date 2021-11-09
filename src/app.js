@@ -1,8 +1,9 @@
 const minNumber = document.querySelector("#min");
 const maxNumber = document.querySelector("#max");
 const generate = document.querySelector("#d");
-const output = document.getElementById("output");
-const output2 = document.getElementById("foutput");
+const output = document.querySelector("#output");
+const output2 = document.querySelector("#foutput");
+const reset = document.querySelector("#reset");
 let rangeNumbers = [];
 
 generate.addEventListener("click", function () {
@@ -29,9 +30,14 @@ generate.addEventListener("click", function () {
 
   if (rangeNumbers.length === arr.length) {
     output.innerText = "No More Random Numbers";
+    generate.disabled = true;
     return;
   }
 });
+
+function res() {
+  return document.getElementById("form").reset();
+}
 
 function getRandomIntInclusive(min, max) {
   min = Math.ceil(min);
