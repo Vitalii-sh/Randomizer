@@ -17,7 +17,7 @@ generate.addEventListener("click", function () {
   }
 
   if (max < min) {
-    output.textContent = "max cannot be less thet min";
+    output.textContent = "max cannot be less that min";
     return;
   }
 
@@ -29,15 +29,19 @@ generate.addEventListener("click", function () {
   output2.textContent = "Genereted numbers:" + rangeNumbers;
 
   if (rangeNumbers.length === arr.length) {
-    output.innerText = "No More Random Numbers";
+    output.innerText = "Elements are over";
     generate.disabled = true;
     return;
   }
 });
 
-function res() {
-  return document.getElementById("form").reset();
-}
+reset.addEventListener("click", function () {
+  minNumber.value = "";
+  maxNumber.value = "";
+  output.textContent = "";
+  output2.textContent = "";
+  return (generate.disabled = false);
+});
 
 function getRandomIntInclusive(min, max) {
   min = Math.ceil(min);

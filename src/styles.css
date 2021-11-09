@@ -69,8 +69,9 @@ body {
 }
 
 .randomizer__label {
+    font-size: 22px;
     position: absolute;
-    top: 32px;
+    top: 26px;
     left: 0;
     color: #4eff47;
     transition: 0.3s;
@@ -94,6 +95,7 @@ body {
 
 .randomizer__input:focus ~ .randomizer__label,
 .randomizer__input:not(:placeholder-shown) ~ .randomizer__label{
+    font-size: 18px;
     top:-15px;
     left: 0px;
     color:#4eff47;

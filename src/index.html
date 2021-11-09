@@ -20,6 +20,8 @@
               id="min"
               placeholder=" "
               class="randomizer__input"
+              pattern="[0-9]+"
+              title=" Only numbers"
             />
             <label for="max" class="randomizer__label">Min:</label>
           </div>
@@ -29,25 +31,25 @@
               id="max"
               placeholder=" "
               class="randomizer__input"
+              pattern="[0-9]+"
+              title=" Only numbers"
             />
             <label for="Min" class="randomizer__label">Max:</label>
           </div>
-          <span class="randomizer__result" id = "foutput">Genereted numbers:</span>
-          <span class="randomizer__result" id = "output">Genereted number:</span>
+          <span class="randomizer__result" id = "foutput"></span>
+          <span class="randomizer__result" id = "output"></span>
           <div class="randomizer__group-btn">
             <button type="button" class="randomizer__btn generate" id = "d">Generate</button>
-            <button type="button" class="randomizer__btn " id = 'reset' onclick="res()">Reset</button>
+            <button type="button" class="randomizer__btn " id = 'reset'>Reset</button>
           </div>
         </form>
       </section>
       <footer class="footer">
         <div class="footer__link">
-          <a href="#">My gitHub</a>
+          <a href="https://github.com/Vitalii-sh">My gitHub</a>
         </div>
       </footer>
     </div>
     <script src="./app.js"></script>
   </body>
 </html>
-<!-- pattern="[0-9]+"
-              title=" Only numbers" -->
