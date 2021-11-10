@@ -38,6 +38,7 @@ generate.addEventListener("click", function () {
 reset.addEventListener("click", function () {
   minNumber.value = "";
   maxNumber.value = "";
+  rangeNumbers = [];
   output.textContent = "";
   output2.textContent = "";
   return (generate.disabled = false);
